@@ -1,0 +1,60 @@
+# fluxer-rolebot
+
+A reaction role bot for [Fluxer](https://fluxer.app). Administrators configure a message and associate emojis with roles. When users react, they automatically receive or lose the corresponding role.
+
+Want to use this without hosting?
+
+[Invite Here](https://web.fluxer.app/oauth2/authorize?client_id=1472276231307042825&scope=bot&permissions=1342377024)
+
+## Notice
+
+I'm currently sick, and mostly uploading this repo as-is so that I can show it to a couple friends. I plan to flesh this out and make it easier to contribute to in the future, but it does function.
+
+## Setup
+
+Requires Python 3.13+ and [uv](https://docs.astral.sh/uv/).
+
+1. Copy `.env.example` to `.env` and fill in your bot token:
+
+   ```
+   cp .env.example .env
+   ```
+
+2. Install dependencies:
+
+   ```
+   uv sync
+   ```
+
+3. Run the bot:
+   ```
+   uv run main.py
+   ```
+
+### Docker
+
+```
+make build
+make run
+```
+
+The bot stores data in a `data/` directory mounted as a volume. See the [Makefile](Makefile) for details.
+
+## Commands
+
+All commands currently require administrator permissions. The default prefix is `!role` (configurable via `COMMAND_PREFIX`).
+
+| Command                           | Description                                     |
+| --------------------------------- | ----------------------------------------------- |
+| `!role setmessage <message_link>` | Set the message users react on to receive roles |
+| `!role removemessage`             | Remove the configured message                   |
+| `!role add @Role <emoji>`         | Associate an emoji with a role                  |
+| `!role remove <emoji>`            | Remove an emoji-role association                |
+
+## Environment Variables
+
+| Variable         | Default      | Description                      |
+| ---------------- | ------------ | -------------------------------- |
+| `FLUXER_TOKEN`   | _(required)_ | Bot token from Fluxer            |
+| `COMMAND_PREFIX` | `!role`      | Prefix for bot commands          |
+| `DB_PATH`        | `db.json`    | Path to the TinyDB database file |

@@ -1,0 +1,16 @@
+# fly.toml app configuration file generated for fluxer-rolebot on 2026-02-18T15:40:41+01:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'fluxer-rolebot'
+primary_region = 'ord'
+
+[build]
+
+[[mounts]]
+  source = 'fluxer_role_data'
+  destination = '/app/data'
+
+[[vm]]
+  size = 'shared-cpu-1x'

@@ -1,0 +1,26 @@
+# Git
+.git
+.gitignore
+
+# Python
+.venv
+__pycache__/
+*.py[oc]
+
+# Environment
+.env
+.env.example
+
+# Runtime data
+data/
+db.json
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Docs / tools
+README.md
+Makefile
+fly.toml
+.python-version
