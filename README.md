@@ -42,7 +42,7 @@ The bot stores data in a `data/` directory mounted as a volume. See the [Makefil
 
 ## Commands
 
-All commands currently require administrator permissions. The default prefix is `!role` (configurable via `COMMAND_PREFIX`).
+All commands currently require administrator permissions. The default prefix is `!` (configurable via `COMMAND_PREFIX`).
 
 | Command                           | Description                                     |
 | --------------------------------- | ----------------------------------------------- |
