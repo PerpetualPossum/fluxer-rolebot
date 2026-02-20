@@ -44,12 +44,12 @@ The bot stores data in a `data/` directory mounted as a volume. See the [Makefil
 
 All commands currently require administrator permissions. The default prefix is `!` (configurable via `COMMAND_PREFIX`).
 
-| Command                           | Description                                     |
-| --------------------------------- | ----------------------------------------------- |
-| `!role setmessage <message_link>` | Set the message users react on to receive roles |
-| `!role removemessage`             | Remove the configured message                   |
-| `!role add @Role <emoji>`         | Associate an emoji with a role                  |
-| `!role remove <emoji>`            | Remove an emoji-role association                |
+| Command                      | Description                                     |
+| ---------------------------- | ----------------------------------------------- |
+| `!setmessage <message_link>` | Set the message users react on to receive roles |
+| `!removemessage`             | Remove the configured message                   |
+| `!add @Role <emoji>`         | Associate an emoji with a role                  |
+| `!remove <emoji>`            | Remove an emoji-role association                |
 
 ## Environment Variables
 
