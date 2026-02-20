@@ -53,8 +53,9 @@ All commands currently require administrator permissions. The default prefix is 
 
 ## Environment Variables
 
-| Variable         | Default      | Description                      |
-| ---------------- | ------------ | -------------------------------- |
-| `FLUXER_TOKEN`   | _(required)_ | Bot token from Fluxer            |
-| `COMMAND_PREFIX` | `!role`      | Prefix for bot commands          |
-| `DB_PATH`        | `db.json`    | Path to the TinyDB database file |
+| Variable         | Default      | Description                                                                                                                            |
+| ---------------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `FLUXER_TOKEN`   | _(required)_ | Bot token from Fluxer                                                                                                                  |
+| `PREFIX_TYPE`    | `default`    | Can be `spaced` or `default`. Default has the format `<prefix>setmessage` for example, and Spaced has the format `<prefix> setmessage` |
+| `COMMAND_PREFIX` | `!`          | Prefix for bot commands                                                                                                                |
+| `DB_PATH`        | `db.json`    | Path to the TinyDB database file                                                                                                       |
