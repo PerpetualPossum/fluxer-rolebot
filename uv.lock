@@ -112,14 +112,10 @@ wheels = [
 [[package]]
 name = "fluxer-py"
 version = "0.3.1"
-source = { registry = "https://pypi.org/simple" }
+source = { git = "https://github.com/PerpetualPossum/fluxer.py.git?rev=8956275f127df710dd4feaff354d1fd999acd745#8956275f127df710dd4feaff354d1fd999acd745" }
 dependencies = [
     { name = "aiohttp" },
     { name = "emoji" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/8e/73/f32cd5279d4ddb436c3fb8dde725a8216a8f079a2f4111bbdf07e45bf162/fluxer_py-0.3.1.tar.gz", hash = "sha256:8c27aa50e276ebd26aee3722e3dda6cd07ab5cc9ac40490bbda94f05c0c8d212", size = 39431, upload-time = "2026-02-19T10:11:40.884Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/77/74/0b30714ef8bd777146a19b87e50ca1c6b86e8f256a0a076b913552077063/fluxer_py-0.3.1-py3-none-any.whl", hash = "sha256:de18e11c0a1f9483afd1add12bce4abb42a662a8cf1b88053d8b9bc6928d72ba", size = 48009, upload-time = "2026-02-19T10:11:39.89Z" },
 ]
 
 [[package]]
@@ -136,7 +132,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "emoji", specifier = ">=2.15.0" },
-    { name = "fluxer-py", specifier = ">=0.3.1" },
+    { name = "fluxer-py", git = "https://github.com/PerpetualPossum/fluxer.py.git?rev=8956275f127df710dd4feaff354d1fd999acd745" },
     { name = "python-dotenv", specifier = ">=1.2.1" },
     { name = "tinydb", specifier = ">=4.8.2" },
 ]

@@ -10,3 +10,6 @@ dependencies = [
     "python-dotenv>=1.2.1",
     "tinydb>=4.8.2",
 ]
+
+[tool.uv.sources]
+fluxer-py = { git = "https://github.com/PerpetualPossum/fluxer.py.git", rev = "8956275f127df710dd4feaff354d1fd999acd745" }
