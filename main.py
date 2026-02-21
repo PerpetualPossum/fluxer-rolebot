@@ -29,7 +29,7 @@ bot = fluxer.Bot(
     intents=fluxer.Intents.all(),
 )
 
-cogs = ["admin", "reaction_handling"]
+cogs = ["admin", "reaction_handling", "util"]
 
 
 @bot.event
