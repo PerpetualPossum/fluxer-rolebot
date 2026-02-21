@@ -6,9 +6,7 @@ Want to use this without hosting?
 
 [Invite Here](https://web.fluxer.app/oauth2/authorize?client_id=1472276231307042825&scope=bot&permissions=1342377024)
 
-## Notice
-
-I'm currently sick, and mostly uploading this repo as-is so that I can show it to a couple friends. I plan to flesh this out and make it easier to contribute to in the future, but it does function.
+[Support Server](https://fluxer.gg/kOPptC9Q)
 
 ## Setup
 
